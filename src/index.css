@@ -1,24 +1,23 @@
-/*ESTILOS GENERALES DE LA PAGINA GENERAL*/
+/* Estilos generales de la página */
 body {
-  
-  color: #ffffff; /* Color de texto blanco */
-  font-family: Arial, sans-serif; /* Fuente estándar */
+  color: #fff; /* Texto blanco */
+  font-family: 'Arial', sans-serif; /* Fuente estándar */
   margin: 0;
   padding: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: #121212; /* Fondo oscuro para todo el cuerpo */
+  background: #121212; /* Fondo oscuro */
   background-size: cover;
-  transition: background-color 0.3s ease-in-out; /* Transición suave para el fondo */
+  transition: background-color 0.3s ease-in-out;
 }
 
-/* Título principal */
+/* Títulos principales */
 h1, h2, h3 {
   color: #fff; /* Blanco para los títulos */
   text-align: center;
   margin: 20px 0;
-  transition: color 0.3s ease-in-out; /* Transición suave para el color del texto */
+  transition: color 0.3s ease-in-out;
 }
 
 /* Títulos secundarios */
@@ -26,44 +25,49 @@ h3 {
   color: #ff9800; /* Naranja para destacar */
 }
 
-/* Tabla de gastos */
+/* Tabla de datos */
 table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
-  border: 1px solid #8f8f8f; /* Borde gris oscuro */
-  background-color: #2222228a; /* Fondo gris oscuro para la tabla */
+  border: 1px solid #8f8f8f;
+  background-color: rgba(34, 34, 34, 0.7); /* Fondo oscuro con transparencia */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Sombra suave */
 }
 
+/* Encabezados y celdas de la tabla */
 th, td {
   padding: 12px;
   text-align: left;
-  color: #fff; /* Texto blanco en la tabla */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 th {
-  background-color: #333; /* Fondo más oscuro para los encabezados */
+  background-color: #333; /* Fondo oscuro para los encabezados */
+  font-weight: bold; /* Negrita para los encabezados */
 }
 
 td {
-  background-color: #2a2a2a; /* Fondo oscuro en las celdas */
+  background-color: #2a2a2a; /* Fondo de las celdas */
 }
 
+/* Efectos al pasar el cursor sobre las celdas */
 td:hover {
-  background-color: #444; /* Hover en las celdas */
-  color: #ff9800; /* Cambiar color del texto al hacer hover */
+  background-color: #444; /* Fondo más claro al hacer hover */
+  color: #ff9800; /* Texto naranja al hacer hover */
 }
 
 /* Formulario para agregar un gasto */
 form {
-  background-color: #1f1f1f; /* Fondo muy oscuro para el formulario */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra suave */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
   margin: 20px auto;
   width: 300px;
-  transition: all 0.3s ease; /* Transición suave para el formulario */
+  background-color: #222; /* Fondo oscuro para el formulario */
+  transition: all 0.3s ease;
 }
 
 input {
@@ -71,64 +75,87 @@ input {
   margin: 10px 0;
   width: 100%;
   border-radius: 5px;
-  border: 1px solid #555; /* Borde gris */
-  background-color: #333; /* Fondo oscuro para los inputs */
-  color: #fff; /* Texto blanco en los inputs */
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Transición suave para los inputs */
+  border: 1px solid #555;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 input:focus {
   outline: none;
-  border-color: #ff9800; /* Resaltar con color naranja al hacer focus */
-  background-color: #444; /* Fondo más claro en el input al hacer focus */
+  border-color: #ff9800; /* Resalta el borde al hacer focus */
+  background-color: #444; /* Fondo más claro en el input */
 }
 
 /* Botón para registrar el gasto */
 button {
   padding: 10px 20px;
-  background-color: #ff9800; /* Color naranja */
+  background-color: #ff9800;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   width: 100%;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave para el botón */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background-color: #e68900; /* Hover de botón */
+  background-color: #e68900;
   transform: scale(1.05); /* Efecto de escala al hacer hover */
 }
 
-/* Estilos para el gráfico de pastel */
+/* Estilo para el gráfico de pastel */
 .Pie {
   margin: 30px auto;
-  width: 70%; /* Se ajusta al 70% del contenedor para no ser tan grande */
-  max-width: 600px; /* Limitar el tamaño máximo del gráfico */
+  width: 70%;
+  max-width: 600px;
 }
 
-/* Agregar márgenes al gráfico */
-div {
-  text-align: center;
-}
-
-/* Ajustar el fondo de la página */
-h1, h2, h3, table, form, .Pie {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Añadir algo de espacio entre las secciones */
+/* Espaciado entre secciones */
 section {
   margin-top: 50px;
 }
 
-/* Estilos para los enlaces (si los hay) */
+/* Enlaces */
 a {
-  color: #ff9800; /* Color del enlace */
+  color: #ff9800;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline; /* Subrayar los enlaces al hacer hover */
+  text-decoration: underline;
+}
+
+/* Estilo para el footer */
+footer {
+  display: flex;
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  height: 200px;
+  background-color: #1c1c1c; /* Fondo más oscuro para el pie de página */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5); /* Sombra en la parte superior del footer */
+}
+
+/* Estilo adicional para la página en modo oscuro */
+body.dark-mode {
+  background: #121212; /* Fondo oscuro */
+  color: #fff;
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+  color: #fff;
+}
+
+body.dark-mode table {
+  background-color: rgba(34, 34, 34, 0.7); /* Fondo oscuro con transparencia */
+}
+
+/* Agregar animaciones */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+section, table, form, .Pie {
+  animation: fadeIn 1s ease-out; /* Animación de aparición suave */
 }
